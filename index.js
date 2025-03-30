@@ -213,17 +213,17 @@ document.addEventListener("DOMContentLoaded", function () {
       highScoreContainer.style.display = "flex";
       highScore.textContent = score;
 
-      //   const data = {
-      //     name: "",
-      //     score: score + 2,
-      //   };
-      //   fetch("https://67e90e36bdcaa2b7f5b87194.mockapi.io/scores", {
-      //     method: "POST",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //     body: JSON.stringify(data),
-      //   });
+      const data = {
+        name: "",
+        score: score + 2,
+      };
+      fetch("https://67e90e36bdcaa2b7f5b87194.mockapi.io/scores", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
     }
   }
 
