@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #1e5799, #7db9e8);
+  font-family: "Arial", sans-serif;
+}
+
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#score-container {
+  position: absolute;
+  top: 20px;
+  left: 68px;
+  color: white;
+  font-size: 20px;
+  z-index: 10;
+}
+
+#start-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+}
+
+#game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #f39c12;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+
+h1,
+h2 {
+  color: white;
+  text-align: center;
+}
+
+#plane {
+  position: absolute;
+  width: 64px;
+  height: 25px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  transition: transform 0.1s;
+}
+
+.cloud {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.obstacle {
+  position: absolute;
+  background-color: #8e44ad;
+  border-radius: 5px;
+}
+
+.fuel {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f1c40f;
+  border-radius: 50%;
+}
+
+#fuel-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#fuel-level {
+  height: 100%;
+  width: 100%;
+  background-color: #f1c40f;
+  transition: width 0.5s;
+}
+
+#controls {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+#sound-toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#sound-icon {
+  margin-left: 8px;
+  font-size: 24px;
+}
+
+.airoplane-container {
+  transform: rotate(45deg);
+  margin-top: -20px;
+}
+
+.fuel-icon {
+  position: absolute;
+  right: 216px;
+  top: 10px;
+}
+
+#high-score-container {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  z-index: 10;
+}
+#high-score {
+  color: white;
+  font-size: 20px;
+}
+
+.new-high-score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-high-score-container {
+  display: none;
+}

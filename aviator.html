@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aviator Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="high-score-container">
+        High Score : <span id="high-score">0</span>
+      </div>
+
+      <div id="score-container">Score : <span id="score">0</span></div>
+      <div class="fuel-icon">
+        <img src="./resources/fuel.svg" width="35px" />
+      </div>
+
+      <div id="fuel-bar">
+        <div id="fuel-level"></div>
+      </div>
+      <div id="plane">
+        <img
+          src="./resources/airoplane.svg"
+          alt="airoplane"
+          class="airoplane-container"
+        />
+      </div>
+      <div id="controls">Controls: Up/Down arrows or W/S keys to move</div>
+      <div id="sound-toggle">Sound: <span id="sound-icon">🔊</span></div>
+
+      <div id="start-screen">
+        <h1>Aviator Game</h1>
+        <p style="color: white">Navigate through obstacles and collect fuel</p>
+        <button id="start-button">Start Game</button>
+      </div>
+
+      <div id="game-over">
+        <div class="new-high-score-container" id="new-high-score-container">
+          <img src="./resources/trophy-64.svg" />
+          <h1 id="new-high-score">New High Score</h1>
+        </div>
+        <h2>Game Over!</h2>
+        <p style="color: white">Your score: <span id="final-score">0</span></p>
+        <button id="restart-button">Play Again</button>
+      </div>
+    </div>
+  </body>
+</html>
