@@ -8,7 +8,7 @@ This is a fun HTML-based game where you can experience an aviator-themed adventu
 
 You can play the game live here:
 
-<span style="font-size: 24px;">[Play Aviator Game](https://amithrv.github.io/aviator-game/)</span >
+<span style="font-size: 24px;color:red;">[Play Aviator Game](https://amithrv.github.io/aviator-game/)</span >
 
 ## How to Play
 
